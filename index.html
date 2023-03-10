@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Liubov Dzhochka">
+    <meta name="description" content="Zadanie z kursu Zostań Front-End developerem">
+    <meta name="content-type" content="text/html">
+    <meta name="keywords" content="task, front-end, forma html"/>
+    <title>Zadanie domowe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img alt="logo" src="LOGO.svg">
+    <a href="/about">O nas <img src="down-arrow.png" alt="arrow"></a>
+    <a href="/services">Nasze usługi <img src="down-arrow.png" alt="arrow"></a>
+    <a href="/portfolio">Portfolio <img src="down-arrow.png" alt="arrow"></a>
+</nav>
+<h1>Kontact us</h1>
+<div class="contact-form">
+    <img src="contact-pages.png" alt="finger pointing at mail">
+    <form action="/api/contact.html" method="get" accept-charset="UTF-8">
+        <label>Imię *
+            <input type="text" name="name" required>
+        </label>
+        <label>Nazwisko *
+            <input type="text" name="surname" required>
+        </label>
+        <label>E-mail *
+            <input type="email" name="email" required>
+        </label>
+        <label>Numer telefonu
+            <input type="tel" name="tel" pattern="(?<!\w)(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}(?!\w)">
+        </label>
+        <label id="question">Twoja wiadomość *
+            <textarea name="question" required minlength="10" maxlength="50" rows="3"
+                      cols="20"></textarea>
+        </label>
+        <button type="submit" formtarget="_blank">Wyślij wiadomość</button>
+    </form>
+</div>
+</body>
+</html>

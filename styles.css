@@ -1,0 +1,127 @@
+
+:root {
+    --main-color: #FBB7B7;
+    --grey: #686868;
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+nav {
+    background-color: var(--main-color);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 90px;
+    padding: 25px;
+    gap: 3em;
+    font-family: 'Italiana', serif;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: var(--main-color);
+    border: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+a img {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contact-form img {
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    width: 28vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: [first] 1fr [second] 1fr [textarea] max-content [button] 1fr;
+    gap: 26px;
+}
+
+label {
+    color: var(--grey);
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    display: block;
+}
+
+input {
+    display: block;
+    height: 53px;
+    width: 277px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #F2F0F0;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+#question {
+    grid-area: textarea /1/ textarea/ 3;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: #F2F0F0;
+    margin: 5px 0;
+    border: 1px solid white;
+}
+
+form button {
+    grid-area: button /1/ button /3;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form button:hover {
+    box-shadow: rgba(104, 104, 104, 0.45) 10px 10px 10px 5px;
+}
